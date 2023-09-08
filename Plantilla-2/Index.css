@@ -1,0 +1,61 @@
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto; /*Tamaño por filas*/
+    gap: .6em; /*Espacio entre columnas y filas*/
+    grid-template-rows: minmax(150px, auto); /*Ancho fijo de filas */
+   
+    
+}
+
+.grid div{
+    background: #ecf0f1;
+    padding: 1em; /*Tamaño a los 4 lados*/
+    border-radius: 4px;
+}
+
+.grid div:hover{
+    border: 1px solid rgb(212, 94, 94);
+}
+
+
+
+
+.row-4{
+    grid-row: span 3/span 3;
+}
+
+.popularProducts{
+    display: grid;
+    gap: 5px;
+}
+
+.popularProducts div{
+    background-color: rgb(197, 140, 136);
+}
+
+.chat{
+    display: grid;
+    gap: 5px;
+}
+
+.chat div{
+    background-color: rgb(196, 197, 136);
+    
+}
+
+.contenedor{
+    background: #fff !important;
+    grid-column: 1 / 4;
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 5px 0px 0px;
+}
+
+.col-2{
+    height: 100%;
+  
+}
+
+
