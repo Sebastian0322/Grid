@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(Img/back_login_euro_2600p-x2600px.jpg);
+}
+
+
+.contenedor{
+    max-width: 73.75rem;
+    margin:  100px auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 25% 75%);
+    gap: 15px;
+
+    color: #fff;
+}
+
+
+.col-1{
+    display: grid;
+    height: 800px; 
+    background-color: rgb(228, 208, 119);
+    border: 2px solid rgb(255, 0, 0);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+.rows-col-1{
+   border: 1px solid #fff;
+   background-color: rgb(179, 224, 158);
+}
+
+
+.colums-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedor-moneda{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    height: 31px;
+    width: 90%;
+    text-align: center;
+    border-radius: 2px;
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+.col-2{
+    border: 1px solid #fff;
+}
+
