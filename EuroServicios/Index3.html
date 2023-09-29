@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select2 Multiple</title>
+    <!-- Incluir las hojas de estilo y los archivos JavaScript de Select2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+</head>
+<body>
+    <h2>Selecciona múltiples opciones:</h2>
+    <!-- Agregar un elemento select con la clase 'js-example-basic-multiple' para activar Select2 -->
+    <select class="js-example-basic-multiple" multiple="multiple">
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+        <option value="opcion4">Opción 4</option>
+        <option value="opcion5">Opción 5</option>
+    </select>
+
+    <script>
+        // Activar Select2 en el elemento select con la clase 'js-example-basic-multiple'
+        $(document).ready(function() {
+            $('.js-example-basic-multiple').select2();
+        });
+    </script>
+</body>
+</html>
