@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +13,7 @@
 <body>
     
 
-    <div  class="contenedor">
-
-       
+    <div class="contenedor" ng-controller="InitEncabezado">
 
         <div class="col-left">
 
@@ -56,14 +54,13 @@
                         <div class="rows-contenedor-precios-moneda">
 
                             <div class="precio-moneda">
-                                $ <input type="text" id="PrecioCompraDolar" class="inputs">
-                               
 
+                                $ <input type="text" id="PrecioCompraDolar" class="inputs" ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                 <!-- $ 3.700 -->
                             </div>
 
                             <div class="precio-moneda">
-                                $ <input type="text" id="PrecioVentaDolar" class="inputs">
+                                $ <input type="text" id="PrecioVentaDolar" class="inputs" ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
                             </div>
  
                         </div>
@@ -108,12 +105,12 @@
 
                             <div class="precio-moneda">
                                 <!-- $ 3.700 -->
-                                $ <input type="text" id="PrecioCompraEuro" class="inputs">
+                                $ <input type="text" id="PrecioCompraEuro" class="inputs" ng-model="data.PrecioCompraEuro" ng-change="AlmacenarLocalStorage()" maxlength="5">
                             </div>
 
                             <div class="precio-moneda">
                                 <!-- $ 3.880 -->
-                                $ <input type="text" id="PrecioVentaEuro" class="inputs">
+                                $ <input type="text" id="PrecioVentaEuro" class="inputs" ng-model="data.PrecioVentaEuro" ng-change="AlmacenarLocalStorage()" maxlength="5">
                             </div>
  
                         </div>
@@ -158,12 +155,12 @@
 
                             <div class="precio-moneda">
                                 <!-- $ 3.700 -->
-                                $ <input type="text" id="PrecioCompraReinoUnido" class="inputs">
+                                $ <input type="text" id="PrecioCompraReinoUnido" class="inputs" ng-model="data.PrecioCompraReinoUnido" ng-change="AlmacenarLocalStorage()" maxlength="5">
                             </div>
 
                             <div class="precio-moneda">
                                 <!-- $ 3.880 -->
-                                $ <input type="text" id="PrecioVentaReinoUnido" class="inputs">
+                                $ <input type="text" id="PrecioVentaReinoUnido" class="inputs" ng-model="data.PrecioVentaReinoUnido" ng-change="AlmacenarLocalStorage()" maxlength="5"> 
                             </div>
  
                         </div>
@@ -208,12 +205,12 @@
 
                             <div class="precio-moneda">
                                 <!-- $ 3.700 -->
-                                $ <input type="text" id="PrecioCompraDolarCanadiense" class="inputs">
+                                $ <input type="text" id="PrecioCompraDolarCanadiense" class="inputs" ng-model="data.PrecioCompraDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
                             </div>
 
                             <div class="precio-moneda">
                                 <!-- $ 3.880 -->
-                                $ <input type="text" id="PrecioVentaDolarCanadiense" class="inputs">
+                                $ <input type="text" id="PrecioVentaDolarCanadiense" class="inputs" ng-model="data.PrecioVentaDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
                             </div>
  
                         </div>
@@ -380,12 +377,6 @@
                         $ 650
                     </div>
 
-                    
-                
-                
-                
-                
-                
                 </div>
 
 
@@ -539,8 +530,6 @@
                         $ 1.8
                     </div>
 
-                    
-                
                 </div>
 
             </div>
@@ -552,25 +541,24 @@
     <div class="footer">
 
         
-        <div style="display: flex;align-items: center;padding-left: 75px; background-color: #0073b7;">
+        <div class="contenedor-calendar">
 
-            <img src="Img/icon_calendar.png" alt="" style="height: 33px;width: 37px;">
-            <p style="padding-left: 19px;font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 21px;">VIERNES 29 DE SEPTIEMBRE</p>
+            <img src="Img/icon_calendar.png" alt="" class="img-calendar">
+            <p class="texto-calendar">VIERNES 29 DE SEPTIEMBRE</p>
         
         </div>
         
        
-        
-        <div style="display: flex;align-items: center;padding-left: 37px;; background-color: #ffffff;">
-            <img src="Img/icon_trm.png" alt="" style="height: 33px;width: 38px;">
-            <p style="padding-left: 9px;font-weight: bold;color: black;font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 27px;">TRM</p>
+        <div class="contenedor-peso">
+            <img src="Img/icon_trm.png" alt="" class="img-peso">
+            <p class="texto-peso">TRM</p>
             
         </div>
 
-        <div style="display: flex;align-items: center; background-color: #ffffff;">
+        <div class="contenedor-marquee">
            
-            <marquee style="color: black;font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 22px;" scrollamount="18">
-                <div style="display: flex; gap: 20px;">
+            <marquee class="marquee-style" scrollamount="18">
+                <div class="contenedor-textos-marquee">
                     <p>DOLAR $4.047.9</p>
                     <p style="color: #4fb09e;">+0.9 (+0.02)%</p>
                     <p>EURO $4.373,73</p>
@@ -582,7 +570,134 @@
         </div>
     </div>
 
-    
+
+    <div class="contenedor-img-logo-transicion">
+        <img src="Img/logo euro.png" alt="" style="height: 95px;">
+    </div>
+
+
+
+
+    <div class="contenedor-transicion esconder">
+
+        <div>
+
+             <div class="contenedor-titulo-moneda-transicion">
+                <div class="titulo-moneda-transicion">
+                    <p>DÓLAR</p>
+                </div>
+            </div>
+           
+            <div style="display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: 33% 67%;">
+
+                <div style="display: flex;justify-content: center;align-items: flex-end;">
+                    <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
+                        <p>COMPRA</p>
+                        <p style="text-align: center;">BUY</p>
+                    </div>
+                </div>
+
+
+                <div style="grid-area: 1/2/3/2;">
+
+                    <div class="contenedor-img-moneda">
+                        
+                        <object data="Img/usa_dolar.svg" style="border-radius: 62px;"></object>
+                        
+                    </div>
+                    
+                </div>
+
+               
+                <div style="display: flex;justify-content: center;align-items: flex-end;">
+                    <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
+                        <p>VENTA</p>
+                        <p style="text-align: center;">SELL</p>
+                    </div>
+                </div>
+
+                <div style="display: flex;justify-content: center;">
+                    <div class="precio-moneda-transicion">
+
+                        $ <input type="text" id="PrecioCompraDolar" value="3.700" style=" background: transparent; border: transparent; width: 9rem; font-size: 3.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
+                        
+                    </div>
+                </div>
+
+                <div style="display: flex;justify-content: center;">
+                    <div class="precio-moneda-transicion">
+
+                        $ <input type="text" id="PrecioCompraDolar" value="4.100" style=" background: transparent; border: transparent; width: 9rem; font-size: 3.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
+                        
+                    </div>
+                </div>
+
+
+            </div>
+
+        
+        </div>
+
+        <div>
+
+            <div class="contenedor-titulo-moneda-transicion">
+               <div class="titulo-moneda-transicion">
+                   <p>EURO</p>
+               </div>
+           </div>
+          
+           <div style="display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: 33% 67%;">
+
+               <div style="display: flex;justify-content: center;align-items: flex-end;">
+                   <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
+                       <p>COMPRA</p>
+                       <p style="text-align: center;">BUY</p>
+                   </div>
+               </div>
+
+
+               <div style="grid-area: 1/2/3/2;">
+
+                   <div class="contenedor-img-moneda">
+                       
+                       <object data="Img/union_europea_euro.svg" style="border-radius: 62px;"></object>
+                       
+                   </div>
+                   
+               </div>
+
+              
+               <div style="display: flex;justify-content: center;align-items: flex-end;">
+                   <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
+                       <p>VENTA</p>
+                       <p style="text-align: center;">SELL</p>
+                   </div>
+               </div>
+
+               <div style="display: flex;justify-content: center;">
+                   <div class="precio-moneda-transicion">
+
+                       $ <input type="text" id="PrecioCompraDolar" value="4.200" style=" background: transparent; border: transparent; width: 9rem; font-size: 3.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
+                       
+                   </div>
+               </div>
+
+               <div style="display: flex;justify-content: center;">
+                   <div class="precio-moneda-transicion">
+
+                       $ <input type="text" id="PrecioCompraDolar" value="4.500" style=" background: transparent; border: transparent; width: 9rem; font-size: 3.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
+                       
+                   </div>
+               </div>
+
+           </div>
+       </div>
+    </div>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 <script src="Index.js"></script>
 
 </body>

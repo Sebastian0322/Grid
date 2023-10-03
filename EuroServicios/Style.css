@@ -24,11 +24,12 @@ body{
     grid-template-columns: repeat(2, auto);
     gap: 12.5rem;
     color: #fff;
-   
+
     /* Esto para el footer */
     position: relative; 
     min-height: 100%;
 }
+
 
 .col-left{
     display: grid;
@@ -201,11 +202,6 @@ body{
     font-size: 1.25rem;
 }
 
-
-
-
-
-
 .footer{
     height:3.125rem;
     line-height:3.125rem;
@@ -221,6 +217,133 @@ body{
 }
 
 
+.contenedor-calendar{
+    display: flex;
+    align-items: center;
+    padding-left: 75px; 
+    background-color: #0073b7;
+}
+
+.img-calendar{
+    height: 33px;
+    width: 37px;
+}
+
+.texto-calendar{
+    padding-left: 19px;
+    font-family: 'Gotham Bool', sans-serif;
+    font-weight: 700;
+    font-size: 21px;   
+}
+
+
+.contenedor-peso{
+    display: flex;
+    align-items: center;
+    padding-left: 37px; 
+    background-color: #ffffff;
+}
+
+.img-peso{
+    height: 33px;
+    width: 38px;
+}
+
+.texto-peso{
+    padding-left: 9px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Gotham Bool', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.contenedor-marquee{
+    display: flex;
+    align-items: center; 
+    background-color: #ffffff;
+}
+
+.marquee-style{
+    color: black;
+    font-family: 'Gotham Bool', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.contenedor-textos-marquee{
+    display: flex; 
+    gap: 20px;
+}
+
+
+
+
+.contenedor-transicion{
+    max-width: 156.75rem;
+    margin: -4.75rem auto;
+    padding: 0.625rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13rem;
+    color: #fff;
+    
+}
+
+.contenedor-img-logo-transicion{
+    height: 26.688rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.precio-moneda-transicion{
+    background-color: #f4da20;
+    width: 20.75rem;
+    border-radius: 0.375rem;
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Seven Segment', sans-serif;
+    font-size: 3.813rem;
+    height: 90px;
+    margin-top: 10px;  
+}
+
+.contenedor-titulo-moneda-transicion{
+    padding: 35px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.titulo-moneda-transicion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56px;
+    width: 55%; 
+    text-align: center;
+    border-radius: 0.375rem;
+    background-color: #0086ca;
+    border: transparent;
+    font-family: 'Gotham Bool', sans-serif;
+    font-weight: 700;
+    font-size: 2.19rem;
+}
+
+.esconder{
+    display: none;
+}
+
+.contenedor, contenedor-transicion{
+    transition: opacity 5s ease;
+}
+
+
 @keyframes marquee{
     0%{
         transform: translate(0, 0);
@@ -229,3 +352,5 @@ body{
         transform: translate(-100%, 0);
     }
 }
+
+
