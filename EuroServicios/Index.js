@@ -57,7 +57,7 @@ app.controller('InitEncabezado', function($scope){
 
         document.querySelector('.contenedor-transicion').classList.toggle("esconder");
 
-      }, 5000); 
+      }, 8000); 
       
 
 
