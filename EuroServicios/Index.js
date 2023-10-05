@@ -52,12 +52,12 @@ app.controller('InitEncabezado', function($scope){
     }
     
 
-    setInterval(function() {
-        document.querySelector('.contenedor').classList.toggle("esconder");
+    // setInterval(function() {
+    //     document.querySelector('.contenedor').classList.toggle("esconder");
 
-        document.querySelector('.contenedor-transicion').classList.toggle("esconder");
+    //     document.querySelector('.contenedor-transicion').classList.toggle("esconder");
 
-      }, 8000); 
+    //   }, 5000); 
       
 
 

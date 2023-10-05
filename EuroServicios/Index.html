@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="App">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,555 +9,707 @@
     <link rel="stylesheet" href="Style.css">
     <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet">
-                 
+
 </head>
+
 <body>
-    
-
-    <div class="contenedor" ng-controller="InitEncabezado">
-
-        <div class="col-left">
-
-            
-            <div>
-                
-                <div class="contenedor-titulo-moneda">
-                    <div class="titulo-moneda">
-                        <p>DÓLAR</p>
-                    </div>
-                </div>
 
 
-                <div class="cols-contenedor-informacion-moneda">
-                    <div class="contenedor-informacion-moneda">
-                        <div class="rows-contenedor-informacion-moneda">
 
-                            <div class="compra-venta">
-                                <p>COMPRA</p>
-                                <p>BUY</p>
-                            </div>
-                           
-                            <div class="contenedor-img-moneda">
-                                <img class="" src="Img/usa_dolar.png" alt="">
-                            </div>
 
-                            <div class="compra-venta">
-                                <p>VENTA</p>
-                                <p>SELL</p>
-                            </div>
 
+
+
+    <div class="mainHome">
+        <div class="contenedor folder1 folder" ng-controller="InitEncabezado">
+
+            <div class="col-left">
+
+
+                <div>
+
+                    <div class="contenedor-titulo-moneda">
+                        <div class="titulo-moneda">
+                            <p>DÓLAR</p>
                         </div>
                     </div>
 
-                    
-                    <div class="contenedor-precios-moneda">
 
-                        <div class="rows-contenedor-precios-moneda">
+                    <div class="cols-contenedor-informacion-moneda">
+                        <div class="contenedor-informacion-moneda">
+                            <div class="rows-contenedor-informacion-moneda">
 
-                            <div class="precio-moneda">
+                                <div class="compra-venta">
+                                    <p>COMPRA</p>
+                                    <p>BUY</p>
+                                </div>
 
-                                $ <input type="text" id="PrecioCompraDolar" class="inputs" ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
-                                <!-- $ 3.700 -->
+                                <div class="contenedor-img-moneda">
+                                    <img class="" src="Img/usa_dolar.png" alt="">
+                                </div>
+
+                                <div class="compra-venta">
+                                    <p>VENTA</p>
+                                    <p>SELL</p>
+                                </div>
+
                             </div>
+                        </div>
 
-                            <div class="precio-moneda">
-                                $ <input type="text" id="PrecioVentaDolar" class="inputs" ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                        <div class="contenedor-precios-moneda">
+
+                            <div class="rows-contenedor-precios-moneda">
+
+                                <div class="precio-moneda">
+
+                                    $ <input type="text" id="PrecioCompraDolar" class="inputs"
+                                        ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
+                                    <!-- $ 3.700 -->
+                                </div>
+
+                                <div class="precio-moneda">
+                                    $ <input type="text" id="PrecioVentaDolar" class="inputs"
+                                        ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
+                                </div>
+
                             </div>
- 
                         </div>
                     </div>
                 </div>
+
+                <div>
+
+                    <div class="contenedor-titulo-moneda">
+                        <div class="titulo-moneda">
+                            <p>EURO</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cols-contenedor-informacion-moneda">
+                        <div class="contenedor-informacion-moneda">
+                            <div class="rows-contenedor-informacion-moneda">
+
+                                <div class="compra-venta">
+                                    <p>COMPRA</p>
+                                    <p>BUY</p>
+                                </div>
+
+                                <div class="contenedor-img-moneda">
+                                    <img class="img-moneda" src="Img/union_europea_euro.png" alt="">
+                                </div>
+
+                                <div class="compra-venta">
+                                    <p>VENTA</p>
+                                    <p>SELL</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="contenedor-precios-moneda">
+
+                            <div class="rows-contenedor-precios-moneda">
+
+                                <div class="precio-moneda">
+                                    <!-- $ 3.700 -->
+                                    $ <input type="text" id="PrecioCompraEuro" class="inputs"
+                                        ng-model="data.PrecioCompraEuro" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
+                                </div>
+
+                                <div class="precio-moneda">
+                                    <!-- $ 3.880 -->
+                                    $ <input type="text" id="PrecioVentaEuro" class="inputs"
+                                        ng-model="data.PrecioVentaEuro" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                    <div class="contenedor-titulo-moneda">
+                        <div class="titulo-moneda">
+                            <p>LIBRA ESTERLINA</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cols-contenedor-informacion-moneda">
+                        <div class="contenedor-informacion-moneda">
+                            <div class="rows-contenedor-informacion-moneda">
+
+                                <div class="compra-venta">
+                                    <p>COMPRA</p>
+                                    <p>BUY</p>
+                                </div>
+
+                                <div class="contenedor-img-moneda">
+                                    <img class="img-moneda" src="Img/reino_unido_libra_esterlina.png" alt="">
+                                </div>
+
+                                <div class="compra-venta">
+                                    <p>VENTA</p>
+                                    <p>SELL</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="contenedor-precios-moneda">
+
+                            <div class="rows-contenedor-precios-moneda">
+
+                                <div class="precio-moneda">
+                                    <!-- $ 3.700 -->
+                                    $ <input type="text" id="PrecioCompraReinoUnido" class="inputs"
+                                        ng-model="data.PrecioCompraReinoUnido" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
+                                </div>
+
+                                <div class="precio-moneda">
+                                    <!-- $ 3.880 -->
+                                    $ <input type="text" id="PrecioVentaReinoUnido" class="inputs"
+                                        ng-model="data.PrecioVentaReinoUnido" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+
+                    <div class="contenedor-titulo-moneda">
+                        <div class="titulo-moneda">
+                            <p>DÓLAR CANADIENSE</p>
+                        </div>
+                    </div>
+
+
+                    <div class="cols-contenedor-informacion-moneda">
+                        <div class="contenedor-informacion-moneda">
+                            <div class="rows-contenedor-informacion-moneda">
+
+                                <div class="compra-venta">
+                                    <p>COMPRA</p>
+                                    <p>BUY</p>
+                                </div>
+
+                                <div class="contenedor-img-moneda">
+                                    <img class="img-moneda" src="Img/canada_dolae_canadiense.png" alt="">
+                                </div>
+
+                                <div class="compra-venta">
+                                    <p>VENTA</p>
+                                    <p>SELL</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div class="contenedor-precios-moneda">
+
+                            <div class="rows-contenedor-precios-moneda">
+
+                                <div class="precio-moneda">
+                                    <!-- $ 3.700 -->
+                                    $ <input type="text" id="PrecioCompraDolarCanadiense" class="inputs"
+                                        ng-model="data.PrecioCompraDolarCanadiense" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
+                                </div>
+
+                                <div class="precio-moneda">
+                                    <!-- $ 3.880 -->
+                                    $ <input type="text" id="PrecioVentaDolarCanadiense" class="inputs"
+                                        ng-model="data.PrecioVentaDolarCanadiense" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div>
-                
-                <div class="contenedor-titulo-moneda">
-                    <div class="titulo-moneda">
-                        <p>EURO</p>
-                    </div>
+
+            <div style="width: 92rem;">
+
+                <div class="contenedor-img-logo">
+                    <img src="Img/logo euro.png" alt="" style="height: 90px;">
                 </div>
 
+                <div class="contenedor-informacion-completa">
 
-                <div class="cols-contenedor-informacion-moneda">
-                    <div class="contenedor-informacion-moneda">
-                        <div class="rows-contenedor-informacion-moneda">
+                    <div class="cols-rows-contenedor-completo">
 
-                            <div class="compra-venta">
-                                <p>COMPRA</p>
-                                <p>BUY</p>
-                            </div>
-                           
-                            <div class="contenedor-img-moneda">
-                                <img class="img-moneda" src="Img/union_europea_euro.png" alt="">
-                            </div>
-
-                            <div class="compra-venta">
-                                <p>VENTA</p>
-                                <p>SELL</p>
-                            </div>
-
+                        <div class="text-center-titulos">
+                            <p>MONEDA</p>
+                            <p>COIN</p>
                         </div>
+
+                        <div class="contenedor-img-moneda">
+                            &nbsp;
+                        </div>
+
+                        <div class="text-center-titulos">
+                            <p>COMPRA</p>
+                            <p>BUY</p>
+                        </div>
+
+                        <div class="text-center-titulos">
+                            <p>VENTA</p>
+                            <p>SELL</p>
+                        </div>
+
+
+                        <!-- PRIMER MONEDA -->
+                        <div class="text-center">
+                            <p>Billete de</p>
+                            <p>500-200 Euros</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/union_europea_euro.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 3.700
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 4.500
+                        </div>
+
+                        <!-- SEGUNDA MONEDA -->
+                        <div class="text-center">
+                            <p>Bolivar</p>
+                            <p>Fuerte</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/venezuela_bolivar_fuerte.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 0
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 0
+                        </div>
+
+                        <!-- TERCER MONEDA -->
+                        <div class="text-center">
+                            <p>Peso</p>
+                            <p>Mexicano</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/mexico_peso_mexicano.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 180
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 220
+                        </div>
+
+                        <!-- CUARTA MONEDA -->
+                        <div class="text-center">
+                            <p>Real -</p>
+                            <p>Brasil</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/brasil_real_brasil.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 730
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 830
+                        </div>
+
+                        <!-- QUINTA MONEDA -->
+                        <div class="text-center">
+                            <p>Franco</p>
+                            <p>Suizo</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/suiza_franco_suizo.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 4.100
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 4.600
+                        </div>
+
+                        <!-- SEXTA MONEDA -->
+                        <div class="text-center">
+                            <p>Dólar de</p>
+                            <p>Nueva Zelanda</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/Nueva_Zelanda_dolar_Nueva_Zelanda.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 2.800
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 3.100
+                        </div>
+
+                        <!-- SEPTIMA MONEDA -->
+                        <div class="text-center">
+                            <p>Peso</p>
+                            <p>Boliviano</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/bolivia_peso_boliviano.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 400
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 650
+                        </div>
+
                     </div>
 
-                    
-                    <div class="contenedor-precios-moneda">
 
-                        <div class="rows-contenedor-precios-moneda">
 
-                            <div class="precio-moneda">
-                                <!-- $ 3.700 -->
-                                $ <input type="text" id="PrecioCompraEuro" class="inputs" ng-model="data.PrecioCompraEuro" ng-change="AlmacenarLocalStorage()" maxlength="5">
-                            </div>
 
-                            <div class="precio-moneda">
-                                <!-- $ 3.880 -->
-                                $ <input type="text" id="PrecioVentaEuro" class="inputs" ng-model="data.PrecioVentaEuro" ng-change="AlmacenarLocalStorage()" maxlength="5">
-                            </div>
- 
+                    <div class="cols-rows-contenedor-completo">
+
+                        <div class="text-center-titulos">
+                            <p>MONEDA</p>
+                            <p>COIN</p>
                         </div>
+
+                        <div class="contenedor-img-moneda">
+                            &nbsp;
+                        </div>
+
+                        <div class="text-center-titulos">
+                            <p>COMPRA</p>
+                            <p>BUY</p>
+                        </div>
+
+                        <div class="text-center-titulos">
+                            <p>VENTA</p>
+                            <p>SELL</p>
+                        </div>
+
+
+                        <!-- PRIMER MONEDA -->
+                        <div class="text-center">
+                            <p>Quetzal</p>
+                            <p>Guatenala</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/guatrmala_Quetzal.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 200
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 380
+                        </div>
+
+                        <!-- SEGUNDA MONEDA -->
+                        <div class="text-center">
+                            <p>Peso Cubano</p>
+                            <p>Convertible</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/cuba_peso_cubano.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ NO
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ NO
+                        </div>
+
+                        <!-- TERCER MONEDA -->
+                        <div class="text-center">
+                            <p>Peso</p>
+                            <p>Dominicano</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/republiza_dominicana_peso_dominicano.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 40
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 70
+                        </div>
+
+                        <!-- CUARTA MONEDA -->
+                        <div class="text-center">
+                            <p>Corona -</p>
+                            <p>Danesa</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/dinamarca_corona_danesa.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 300
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 430
+                        </div>
+
+                        <!-- QUINTA MONEDA -->
+                        <div class="text-center">
+                            <p>Corona</p>
+                            <p>Noruega</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/noruega_corona_noruega.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 0
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 0
+                        </div>
+
+                        <!-- SEXTA MONEDA -->
+                        <div class="text-center">
+                            <p>Baht</p>
+                            <p>Tailandés</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/tailandia_Baht.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 25
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 3.100
+                        </div>
+
+                        <!-- SEPTIMA MONEDA -->
+                        <div class="text-center">
+                            <p>Won-</p>
+                            <p>Corea del Sur</p>
+                        </div>
+
+                        <div class="contenedor-img-moneda">
+                            <img class="img-moneda" src="Img/corea_del_sur_won.png" alt="">
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-left">
+                            $ 0.4
+                        </div>
+
+                        <div class="precio-moneda-contenedor-completo-right">
+                            $ 1.8
+                        </div>
+
                     </div>
+
                 </div>
+
             </div>
 
-            <div>
-                
-                <div class="contenedor-titulo-moneda">
-                    <div class="titulo-moneda">
-                        <p>LIBRA ESTERLINA</p>
-                    </div>
-                </div>
-
-
-                <div class="cols-contenedor-informacion-moneda">
-                    <div class="contenedor-informacion-moneda">
-                        <div class="rows-contenedor-informacion-moneda">
-
-                            <div class="compra-venta">
-                                <p>COMPRA</p>
-                                <p>BUY</p>
-                            </div>
-                           
-                            <div class="contenedor-img-moneda">
-                                <img class="img-moneda" src="Img/reino_unido_libra_esterlina.png" alt="">
-                            </div>
-
-                            <div class="compra-venta">
-                                <p>VENTA</p>
-                                <p>SELL</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    
-                    <div class="contenedor-precios-moneda">
-
-                        <div class="rows-contenedor-precios-moneda">
-
-                            <div class="precio-moneda">
-                                <!-- $ 3.700 -->
-                                $ <input type="text" id="PrecioCompraReinoUnido" class="inputs" ng-model="data.PrecioCompraReinoUnido" ng-change="AlmacenarLocalStorage()" maxlength="5">
-                            </div>
-
-                            <div class="precio-moneda">
-                                <!-- $ 3.880 -->
-                                $ <input type="text" id="PrecioVentaReinoUnido" class="inputs" ng-model="data.PrecioVentaReinoUnido" ng-change="AlmacenarLocalStorage()" maxlength="5"> 
-                            </div>
- 
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
-            <div>
-                
-                <div class="contenedor-titulo-moneda">
-                    <div class="titulo-moneda">
-                        <p>DÓLAR CANADIENSE</p>
-                    </div>
-                </div>
-
-
-                <div class="cols-contenedor-informacion-moneda">
-                    <div class="contenedor-informacion-moneda">
-                        <div class="rows-contenedor-informacion-moneda">
-
-                            <div class="compra-venta">
-                                <p>COMPRA</p>
-                                <p>BUY</p>
-                            </div>
-                           
-                            <div class="contenedor-img-moneda">
-                                <img class="img-moneda" src="Img/canada_dolae_canadiense.png" alt="">
-                            </div>
-
-                            <div class="compra-venta">
-                                <p>VENTA</p>
-                                <p>SELL</p>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    
-                    <div class="contenedor-precios-moneda">
-
-                        <div class="rows-contenedor-precios-moneda">
-
-                            <div class="precio-moneda">
-                                <!-- $ 3.700 -->
-                                $ <input type="text" id="PrecioCompraDolarCanadiense" class="inputs" ng-model="data.PrecioCompraDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
-                            </div>
-
-                            <div class="precio-moneda">
-                                <!-- $ 3.880 -->
-                                $ <input type="text" id="PrecioVentaDolarCanadiense" class="inputs" ng-model="data.PrecioVentaDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
-                            </div>
- 
-                        </div>
-                    </div>
-                </div>
-            </div>
-           
         </div>
 
 
-        <div style="width: 92rem;">
-            
-            <div class="contenedor-img-logo">
-                <img src="Img/logo euro.png" alt="" style="height: 90px;">
+        <div class=" contenedor2 folder3 folder">
+            <div class="contenedor-img-logo-transicion ">
+                <img src="Img/logo euro.png" alt="" style="height: 95px;">
             </div>
-            
-            <div class="contenedor-informacion-completa">
+            <div class="contenedor-transicion ">
+                <div>
 
-                <div class="cols-rows-contenedor-completo">
-                
-                    <div class="text-center-titulos">
-                        <p>MONEDA</p>
-                        <p>COIN</p>
-                    </div>
-                   
-                    <div class="contenedor-img-moneda">
-                        &nbsp;
+                    <div class="contenedor-titulo-moneda-transicion">
+                        <div class="titulo-moneda-transicion">
+                            <p>DÓLAR</p>
+                        </div>
                     </div>
 
-                    <div class="text-center-titulos">
-                        <p>COMPRA</p>
-                        <p>BUY</p>
+                    <div style="display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: 33% 67%;">
+
+                        <div style="display: flex;justify-content: center;align-items: flex-end;">
+                            <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
+                                <p>COMPRA</p>
+                                <p style="text-align: center;">BUY</p>
+                            </div>
+                        </div>
+
+
+                        <div style="grid-area: 1/2/3/2;">
+
+                            <div class="contenedor-img-moneda" style="width: 25rem;">
+
+                                <object data="Img/usa_dolar.svg" style="border-radius: 62px;height: 19rem;"></object>
+
+                            </div>
+
+                        </div>
+
+
+                        <div style="display: flex;justify-content: center;align-items: flex-end;">
+                            <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
+                                <p>VENTA</p>
+                                <p style="text-align: center;">SELL</p>
+                            </div>
+                        </div>
+
+                        <div style="display: flex;justify-content: center;">
+                            <div class="precio-moneda-transicion">
+
+                                $ <input type="text" id="PrecioCompraDolar" value="3.700"
+                                    style=" background: transparent; border: transparent; width: 12rem; font-size: 4.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
+
+                            </div>
+                        </div>
+
+                        <div style="display: flex;justify-content: center;">
+                            <div class="precio-moneda-transicion">
+
+                                $ <input type="text" id="PrecioCompraDolar" value="4.100"
+                                    style=" background: transparent; border: transparent; width: 12rem; font-size: 4.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
+
+                            </div>
+                        </div>
+
+
                     </div>
 
-                    <div class="text-center-titulos">
-                        <p>VENTA</p>
-                        <p>SELL</p>
-                    </div>
-                
-                
-                    <!-- PRIMER MONEDA -->
-                    <div class="text-center">
-                        <p>Billete de</p>
-                        <p>500-200 Euros</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/union_europea_euro.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 3.700
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 4.500
-                    </div>
-
-                    <!-- SEGUNDA MONEDA -->
-                    <div class="text-center">
-                        <p>Bolivar</p>
-                        <p>Fuerte</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/venezuela_bolivar_fuerte.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 0
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 0
-                    </div>
-
-                    <!-- TERCER MONEDA -->
-                    <div class="text-center">
-                        <p>Peso</p>
-                        <p>Mexicano</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/mexico_peso_mexicano.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 180
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 220
-                    </div>
-
-                    <!-- CUARTA MONEDA -->
-                    <div class="text-center">
-                        <p>Real -</p>
-                        <p>Brasil</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/brasil_real_brasil.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 730
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 830
-                    </div>
-
-                    <!-- QUINTA MONEDA -->
-                    <div class="text-center">
-                        <p>Franco</p>
-                        <p>Suizo</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/suiza_franco_suizo.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 4.100
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 4.600
-                    </div>
-
-                    <!-- SEXTA MONEDA -->
-                    <div class="text-center">
-                        <p>Dólar de</p>
-                        <p>Nueva Zelanda</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/Nueva_Zelanda_dolar_Nueva_Zelanda.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 2.800
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 3.100
-                    </div>
-
-                    <!-- SEPTIMA MONEDA -->
-                    <div class="text-center">
-                        <p>Peso</p>
-                        <p>Boliviano</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/bolivia_peso_boliviano.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 400
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 650
-                    </div>
 
                 </div>
 
+                <div>
 
-
-
-                <div class="cols-rows-contenedor-completo">
-                
-                    <div class="text-center-titulos">
-                        <p>MONEDA</p>
-                        <p>COIN</p>
-                    </div>
-                   
-                    <div class="contenedor-img-moneda">
-                        &nbsp;
+                    <div class="contenedor-titulo-moneda-transicion">
+                        <div class="titulo-moneda-transicion">
+                            <p>EURO</p>
+                        </div>
                     </div>
 
-                    <div class="text-center-titulos">
-                        <p>COMPRA</p>
-                        <p>BUY</p>
-                    </div>
+                    <div style="display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: 33% 67%;">
 
-                    <div class="text-center-titulos">
-                        <p>VENTA</p>
-                        <p>SELL</p>
-                    </div>
-                
-                
-                    <!-- PRIMER MONEDA -->
-                    <div class="text-center">
-                        <p>Quetzal</p>
-                        <p>Guatenala</p>
-                    </div>
+                        <div style="display: flex;justify-content: center;align-items: flex-end;">
+                            <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
+                                <p>COMPRA</p>
+                                <p style="text-align: center;">BUY</p>
+                            </div>
+                        </div>
 
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/guatrmala_Quetzal.png" alt="">
-                    </div>
 
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 200
-                    </div>
+                        <div style="grid-area: 1/2/3/2;">
 
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 380
-                    </div>
+                            <div class="contenedor-img-moneda" style="width: 25rem;"> 
 
-                    <!-- SEGUNDA MONEDA -->
-                    <div class="text-center">
-                        <p>Peso Cubano</p>
-                        <p>Convertible</p>
-                    </div>
+                                <object data="Img/union_europea_euro.svg" style="border-radius: 62px;height: 19rem;"></object>
 
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/cuba_peso_cubano.png" alt="">
-                    </div>
+                            </div>
 
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ NO
-                    </div>
+                        </div>
 
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ NO
-                    </div>
 
-                    <!-- TERCER MONEDA -->
-                    <div class="text-center">
-                        <p>Peso</p>
-                        <p>Dominicano</p>
-                    </div>
+                        <div style="display: flex;justify-content: center;align-items: flex-end;">
+                            <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
+                                <p>VENTA</p>
+                                <p style="text-align: center;">SELL</p>
+                            </div>
+                        </div>
 
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/republiza_dominicana_peso_dominicano.png" alt="">
-                    </div>
+                        <div style="display: flex;justify-content: center;">
+                            <div class="precio-moneda-transicion">
 
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 40
-                    </div>
+                                $ <input type="text" id="PrecioCompraDolar" value="4.200"
+                                    style=" background: transparent; border: transparent; width: 12rem; font-size: 4.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
 
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 70
-                    </div>
+                            </div>
+                        </div>
 
-                    <!-- CUARTA MONEDA -->
-                    <div class="text-center">
-                        <p>Corona -</p>
-                        <p>Danesa</p>
-                    </div>
+                        <div style="display: flex;justify-content: center;">
+                            <div class="precio-moneda-transicion">
 
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/dinamarca_corona_danesa.png" alt="">
-                    </div>
+                                $ <input type="text" id="PrecioCompraDolar" value="4.500"
+                                    style=" background: transparent; border: transparent; width: 12rem; font-size: 4.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
 
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 300
-                    </div>
+                            </div>
+                        </div>
 
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 430
                     </div>
-
-                    <!-- QUINTA MONEDA -->
-                    <div class="text-center">
-                        <p>Corona</p>
-                        <p>Noruega</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/noruega_corona_noruega.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 0
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 0
-                    </div>
-
-                    <!-- SEXTA MONEDA -->
-                    <div class="text-center">
-                        <p>Baht</p>
-                        <p>Tailandés</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/tailandia_Baht.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 25
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 3.100
-                    </div>
-
-                    <!-- SEPTIMA MONEDA -->
-                    <div class="text-center">
-                        <p>Won-</p>
-                        <p>Corea del Sur</p>
-                    </div>
-
-                    <div class="contenedor-img-moneda">
-                        <img class="img-moneda" src="Img/corea_del_sur_won.png" alt="">
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-left">
-                        $ 0.4
-                    </div>
-
-                    <div class="precio-moneda-contenedor-completo-right">
-                        $ 1.8
-                    </div>
-
                 </div>
-
             </div>
-           
         </div>
-     
+
+
     </div>
+
 
     <div class="footer">
 
-        
+
         <div class="contenedor-calendar">
 
             <img src="Img/icon_calendar.png" alt="" class="img-calendar">
             <p class="texto-calendar">VIERNES 29 DE SEPTIEMBRE</p>
-        
+
         </div>
-        
-       
+
+
         <div class="contenedor-peso">
             <img src="Img/icon_trm.png" alt="" class="img-peso">
             <p class="texto-peso">TRM</p>
-            
+
         </div>
 
         <div class="contenedor-marquee">
-           
+
             <marquee class="marquee-style" scrollamount="18">
                 <div class="contenedor-textos-marquee">
                     <p>DOLAR $4.047.9</p>
@@ -571,135 +724,9 @@
     </div>
 
 
-    <div class="contenedor-img-logo-transicion">
-        <img src="Img/logo euro.png" alt="" style="height: 95px;">
-    </div>
-
-
-
-
-    <div class="contenedor-transicion esconder">
-
-        <div>
-
-             <div class="contenedor-titulo-moneda-transicion">
-                <div class="titulo-moneda-transicion">
-                    <p>DÓLAR</p>
-                </div>
-            </div>
-           
-            <div style="display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: 33% 67%;">
-
-                <div style="display: flex;justify-content: center;align-items: flex-end;">
-                    <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
-                        <p>COMPRA</p>
-                        <p style="text-align: center;">BUY</p>
-                    </div>
-                </div>
-
-
-                <div style="grid-area: 1/2/3/2;">
-
-                    <div class="contenedor-img-moneda">
-                        
-                        <object data="Img/usa_dolar.svg" style="border-radius: 62px;"></object>
-                        
-                    </div>
-                    
-                </div>
-
-               
-                <div style="display: flex;justify-content: center;align-items: flex-end;">
-                    <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
-                        <p>VENTA</p>
-                        <p style="text-align: center;">SELL</p>
-                    </div>
-                </div>
-
-                <div style="display: flex;justify-content: center;">
-                    <div class="precio-moneda-transicion">
-
-                        $ <input type="text" id="PrecioCompraDolar" value="3.700" style=" background: transparent; border: transparent; width: 9rem; font-size: 3.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
-                        
-                    </div>
-                </div>
-
-                <div style="display: flex;justify-content: center;">
-                    <div class="precio-moneda-transicion">
-
-                        $ <input type="text" id="PrecioCompraDolar" value="4.100" style=" background: transparent; border: transparent; width: 9rem; font-size: 3.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
-                        
-                    </div>
-                </div>
-
-
-            </div>
-
-        
-        </div>
-
-        <div>
-
-            <div class="contenedor-titulo-moneda-transicion">
-               <div class="titulo-moneda-transicion">
-                   <p>EURO</p>
-               </div>
-           </div>
-          
-           <div style="display: grid;grid-template-columns: repeat(3, 1fr);grid-template-rows: 33% 67%;">
-
-               <div style="display: flex;justify-content: center;align-items: flex-end;">
-                   <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
-                       <p>COMPRA</p>
-                       <p style="text-align: center;">BUY</p>
-                   </div>
-               </div>
-
-
-               <div style="grid-area: 1/2/3/2;">
-
-                   <div class="contenedor-img-moneda">
-                       
-                       <object data="Img/union_europea_euro.svg" style="border-radius: 62px;"></object>
-                       
-                   </div>
-                   
-               </div>
-
-              
-               <div style="display: flex;justify-content: center;align-items: flex-end;">
-                   <div style="font-family: 'Gotham Bool', sans-serif;font-weight: 700;font-size: 26px;">
-                       <p>VENTA</p>
-                       <p style="text-align: center;">SELL</p>
-                   </div>
-               </div>
-
-               <div style="display: flex;justify-content: center;">
-                   <div class="precio-moneda-transicion">
-
-                       $ <input type="text" id="PrecioCompraDolar" value="4.200" style=" background: transparent; border: transparent; width: 9rem; font-size: 3.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
-                       
-                   </div>
-               </div>
-
-               <div style="display: flex;justify-content: center;">
-                   <div class="precio-moneda-transicion">
-
-                       $ <input type="text" id="PrecioCompraDolar" value="4.500" style=" background: transparent; border: transparent; width: 9rem; font-size: 3.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
-                       
-                   </div>
-               </div>
-
-           </div>
-       </div>
-    </div>
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-<script src="Index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="Index.js"></script>
 
 </body>
-</html>
 
+</html>
