@@ -12,16 +12,12 @@
 
 </head>
 
-<body>
-
-
-
-
+<body ng-controller="InitEncabezado" ng-cloack>
 
 
 
     <div class="mainHome">
-        <div class="contenedor folder1 folder" ng-controller="InitEncabezado">
+        <div class="contenedor folder1 folder" ng-class="{'paused-animation': folder1}">
 
             <div class="col-left">
 
@@ -286,11 +282,11 @@
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-left">
-                            $ 3.700
+                            $ {{ data.PrecioCompraEuro }}
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-right">
-                            $ 4.500
+                            $ {{ data.PrecioVentaEuro }}
                         </div>
 
                         <!-- SEGUNDA MONEDA -->
@@ -304,11 +300,17 @@
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-left">
-                            $ 0
+                            <!-- $ 0 -->
+                            $ <input type="text" id="PrecioCompraBolivar" class="inputs"
+                                        ng-model="data.PrecioCompraBolivar" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-right">
-                            $ 0
+                            <!-- $ 0 -->
+                            $ <input type="text" id="PrecioVentaBolivar" class="inputs"
+                            ng-model="data.PrecioVentaBolivar" ng-change="AlmacenarLocalStorage()"
+                            maxlength="5">
                         </div>
 
                         <!-- TERCER MONEDA -->
@@ -322,11 +324,17 @@
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-left">
-                            $ 180
+                            <!-- $ 180 -->
+                            $ <input type="text" id="PrecioCompraPesoMexicano" class="inputs"
+                                        ng-model="data.PrecioCompraPesoMexicano" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-right">
-                            $ 220
+                            <!-- $ 220 -->
+                            $ <input type="text" id="PrecioVentaPesoMexicano" class="inputs"
+                                        ng-model="data.PrecioVentaPesoMexicano" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <!-- CUARTA MONEDA -->
@@ -340,11 +348,17 @@
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-left">
-                            $ 730
+                            <!-- $ 730 -->
+                            $ <input type="text" id="PrecioCompraRealBrasil" class="inputs"
+                                        ng-model="data.PrecioCompraRealBrasil" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-right">
-                            $ 830
+                            <!-- $ 830 -->
+                            $ <input type="text" id="PrecioVentaRealBrasil" class="inputs"
+                                        ng-model="data.PrecioVentaRealBrasil" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <!-- QUINTA MONEDA -->
@@ -358,11 +372,17 @@
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-left">
-                            $ 4.100
+                            <!-- $ 4.100 -->
+                            $ <input type="text" id="PrecioCompraFrancoSuizo" class="inputs"
+                                        ng-model="data.PrecioCompraFrancoSuizo" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-right">
-                            $ 4.600
+                            <!-- $ 4.600 -->
+                            $ <input type="text" id="PrecioVentaFrancoSuizo" class="inputs"
+                                        ng-model="data.PrecioVentaFrancoSuizo" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <!-- SEXTA MONEDA -->
@@ -376,11 +396,17 @@
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-left">
-                            $ 2.800
+                            <!-- $ 2.800 -->
+                            $ <input type="text" id="PrecioCompraDolarNeolandez" class="inputs"
+                                        ng-model="data.PrecioCompraDolarNeolandez" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-right">
-                            $ 3.100
+                            <!-- $ 3.100 -->
+                            $ <input type="text" id="PrecioVentaDolarNeolandez" class="inputs"
+                                        ng-model="data.PrecioVentaDolarNeolandez" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <!-- SEPTIMA MONEDA -->
@@ -394,11 +420,17 @@
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-left">
-                            $ 400
+                            <!-- $ 400 -->
+                            $ <input type="text" id="PrecioCompraPesoBoliviano" class="inputs"
+                                        ng-model="data.PrecioCompraPesoBoliviano" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                         <div class="precio-moneda-contenedor-completo-right">
-                            $ 650
+                            <!-- $ 650 -->
+                            $ <input type="text" id="PrecioVentaPesoBoliviano" class="inputs"
+                                        ng-model="data.PrecioVentaPesoBoliviano" ng-change="AlmacenarLocalStorage()"
+                                        maxlength="5">
                         </div>
 
                     </div>
@@ -563,7 +595,7 @@
         </div>
 
 
-        <div class=" contenedor2 folder3 folder">
+        <div class=" contenedor2 folder3 folder" ng-class="{'paused-animation': folder3}">
             <div class="contenedor-img-logo-transicion ">
                 <img src="Img/logo euro.png" alt="" style="height: 95px;">
             </div>
@@ -607,25 +639,19 @@
                         <div style="display: flex;justify-content: center;">
                             <div class="precio-moneda-transicion">
 
-                                $ <input type="text" id="PrecioCompraDolar" value="3.700"
-                                    style=" background: transparent; border: transparent; width: 12rem; font-size: 4.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
-
+                                $ {{ data.PrecioCompraDolar }}
+                               
                             </div>
                         </div>
 
                         <div style="display: flex;justify-content: center;">
                             <div class="precio-moneda-transicion">
 
-                                $ <input type="text" id="PrecioCompraDolar" value="4.100"
-                                    style=" background: transparent; border: transparent; width: 12rem; font-size: 4.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
+                                $ {{ data.PrecioVentaDolar}}
 
                             </div>
                         </div>
-
-
                     </div>
-
-
                 </div>
 
                 <div>
@@ -667,17 +693,15 @@
                         <div style="display: flex;justify-content: center;">
                             <div class="precio-moneda-transicion">
 
-                                $ <input type="text" id="PrecioCompraDolar" value="4.200"
-                                    style=" background: transparent; border: transparent; width: 12rem; font-size: 4.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
-
+                                $ {{ data.PrecioCompraEuro }}
+                               
                             </div>
                         </div>
 
                         <div style="display: flex;justify-content: center;">
                             <div class="precio-moneda-transicion">
 
-                                $ <input type="text" id="PrecioCompraDolar" value="4.500"
-                                    style=" background: transparent; border: transparent; width: 12rem; font-size: 4.813rem; font-family: 'Seven Segment', sans-serif; margin-left: 20px; outline: none;">
+                                $ {{ data.PrecioVentaEuro }}
 
                             </div>
                         </div>
@@ -689,13 +713,18 @@
 
 
     </div>
+        
 
-
+   
     <div class="footer">
 
+        <div style="background: #0073b7;height: 100%;width: 100%;">
+            <button type="button" ng-click="Pausar()">
+                <img ng-src="{{ icono }}" alt="" class="" style="height: 16px;width: 16px;">
+            </button>
+        </div>
 
         <div class="contenedor-calendar">
-
             <img src="Img/icon_calendar.png" alt="" class="img-calendar">
             <p class="texto-calendar">VIERNES 29 DE SEPTIEMBRE</p>
 

@@ -220,7 +220,7 @@ body{
     left:0;
     width:100%;
     display: grid;
-    grid-template-columns: repeat(3, 35% 11% 54%);
+    grid-template-columns: 1% 36% 11% 52%;
 }
 
 
@@ -364,9 +364,11 @@ body{
   .folder {
     flex: 1 100%;
     
+    
   }
   .folder1 {
     margin-right: -100%;
+    z-index: 1;
     animation: fade1 15s ease infinite;
     /* display: none; */
   }
@@ -389,6 +391,7 @@ body{
   }
   .folder3 {
     opacity: 0;
+    z-index: 0;
     animation: fade1 15s ease infinite; 
   }
   .folder3 {
@@ -415,3 +418,6 @@ body{
   }
   
 
+.paused-animation{
+    animation-play-state: paused !important;
+}
