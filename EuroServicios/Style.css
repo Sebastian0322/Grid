@@ -247,8 +247,9 @@ body{
 .contenedor-peso{
     display: flex;
     align-items: center;
-    padding-left: 37px; 
+    padding-left: 37px;
     background-color: #ffffff;
+    justify-content: center;
 }
 
 .img-peso{
@@ -392,10 +393,10 @@ body{
   .folder3 {
     opacity: 0;
     z-index: 0;
-    animation: fade1 15s ease infinite; 
+    animation: fade1 15s ease infinite;  
   }
   .folder3 {
-     animation-name: fade3; 
+    animation-name: fade3;  
   }
   
   

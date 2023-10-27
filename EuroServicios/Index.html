@@ -14,13 +14,10 @@
 
 <body ng-controller="InitEncabezado" ng-cloack>
 
-
-
     <div class="mainHome">
         <div class="contenedor folder1 folder" ng-class="{'paused-animation': folder1}">
 
             <div class="col-left">
-
 
                 <div>
 
@@ -715,42 +712,11 @@
     </div>
         
 
+    <button type="button" ng-click="Pausar()">
+        <img ng-src="{{ icono }}" alt="" class="" style="height: 16px;width: 16px;">
+    </button>
    
-    <div class="footer">
 
-        <div style="background: #0073b7;height: 100%;width: 100%;">
-            <button type="button" ng-click="Pausar()">
-                <img ng-src="{{ icono }}" alt="" class="" style="height: 16px;width: 16px;">
-            </button>
-        </div>
-
-        <div class="contenedor-calendar">
-            <img src="Img/icon_calendar.png" alt="" class="img-calendar">
-            <p class="texto-calendar">VIERNES 29 DE SEPTIEMBRE</p>
-
-        </div>
-
-
-        <div class="contenedor-peso">
-            <img src="Img/icon_trm.png" alt="" class="img-peso">
-            <p class="texto-peso">TRM</p>
-
-        </div>
-
-        <div class="contenedor-marquee">
-
-            <marquee class="marquee-style" scrollamount="18">
-                <div class="contenedor-textos-marquee">
-                    <p>DOLAR $4.047.9</p>
-                    <p style="color: #4fb09e;">+0.9 (+0.02)%</p>
-                    <p>EURO $4.373,73</p>
-                    <p style="color: #4fb09e;">+12.04 (+0.02)%</p>
-                    <p>PESO MEXICANO $2.100</p>
-                    <p style="color: #4fb09e;">+0.4 (+0.01)%</p>
-                </div>
-            </marquee>
-        </div>
-    </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
@@ -759,3 +725,8 @@
 </body>
 
 </html>
+
+
+
+
+
