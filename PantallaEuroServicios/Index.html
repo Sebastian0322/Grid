@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro Servicios</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.cdnfonts.com/css/seven-segment" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/gotham-6" rel="stylesheet">
+</head>
+
+<body ng-controller="InitEncabezado" ng-cloack>
+    <div class="mainHome">
+
+        <div class="container Principal" ng-class="{'paused-animation': Principal}">
+            <div class="containerPrincipal">
+
+                <div class="containerLeft">
+                    <div class="containerItemsLeft">
+                        <div class="itemLeft">
+
+                            <div class="titleItemLeft">
+                                <span>DÓLAR</span>
+                            </div>
+
+                            <div class="bodyItemLeft">
+                                <div class="w-25 flex flex-Col alignCenter ">
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter" style="font-weight: bold;">COMPRA <br>BUY</span>
+                                    </div>
+
+                                    <img src="Img/usa_dolar.png" alt="" />
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">VENTA <br>SELL</span>
+                                    </div>
+                                </div>
+
+                                <div class="flex flex-Col">
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioCompraDolar" class="inputs"ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioVentaDolar" class="inputs"ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="itemLeft">
+
+                            <div class="titleItemLeft">
+                                <span>EURO 100 - 50 - 10 - 5</span>
+                            </div>
+
+                            <div class="bodyItemLeft">
+
+                                <div class="w-25 flex flex-Col alignCenter ">
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">COMPRA <br>BUY</span>
+                                    </div>
+
+                                    <img src="Img/union_europea_euro.png" alt="" />
+
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">VENTA <br>SELL</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex flex-Col">
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioCompraEuroMenudo" class="inputs"ng-model="data.PrecioCompraEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioVentaEuroMenudo" class="inputs"ng-model="data.PrecioVentaEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemLeft">
+
+                            <div class="titleItemLeft">
+                                <span>EURO 200</span>
+                            </div>
+
+                            <div class="bodyItemLeft">
+
+                                <div class="w-25 flex flex-Col alignCenter ">
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">COMPRA <br>BUY</span>
+                                    </div>
+
+                                    <img src="Img/union_europea_euro.png" alt="" />
+                                    
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">VENTA <br>SELL</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex flex-Col">
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioCompraEuro200" class="inputs"ng-model="data.PrecioCompraEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioVentaEuro200" class="inputs"ng-model="data.PrecioVentaEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="itemLeft">
+
+                            <div class="titleItemLeft">
+                                <span>PESO MEXICANO</span>
+                            </div>
+
+                            <div class="bodyItemLeft">
+
+                                <div class="w-25 flex flex-Col alignCenter ">
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter"> COMPRA <br>BUY</span>
+                                    </div>
+
+                                    <img src="Img/mexico_peso_mexicano.png" alt="" />
+
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">VENTA <br>SELL</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex flex-Col">
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioCompraPesoMexicano" class="inputs"ng-model="data.PrecioCompraPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioVentaPesoMexicano" class="inputs"ng-model="data.PrecioVentaPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerCenter">
+
+                    <div class="containerImgLogo">
+
+                        <div style="display: flex;flex-direction: column;width: 30%; gap: 6px;">
+                            <div style="display: flex;align-items: center; gap: 10px;">
+                            
+                                <img src="/Img/peso.png" alt="" style="width: 23%;height: 100%;">
+                                <span style="font-size: 25px;font-weight: 100;">TRM</span>
+                                
+                            </div>
+
+                            <span style="font-size: 43px; font-weight: 100; font-family: 'Seven Segment', sans-serif;"> $ 
+                                <input class="inputTrm" type="text" name="ValorTRM" id="ValorTRM" ng-model="data.ValorTRM" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                            </span>
+                            
+                        </div>
+
+                        <img src="/Img/logo euro.png" class="imgPrincipal"  alt="">
+
+                        <div style="display: flex;flex-direction: column;width: 30%; gap: 6px;">
+                            <div style="display: flex;align-items: center; gap: 10px;">
+                            
+                                <img src="/Img/fecha.png" alt="" style="width: 23%;height: 100%;">
+                                <span style="font-size: 25px;font-weight: 100;">FECHA</span>
+                                
+                            </div>
+
+                            <span style="font-size: 18px; font-weight: 100;">{{ FechaActual }}</span>
+                           
+                        </div>
+
+                    </div>
+
+
+                    <div class="container-columns-center">
+                        <div class="columns-center">
+                            <div class="container-center-complete">
+                                <div class="container-titles-center">
+
+                                    <div class="rows-containerCenter">
+                                        <span style="font-size: 18px;">MONEDA COIN</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Dólar Canadiense</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Libra Esterlina</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Dólar Australiano</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Real - Brasil</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Franco Suizo</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Peso Chileno</span>
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <span>Nuevo Sol</span>
+                                    </div> -->
+
+                                </div>
+
+                                <div class="container-img-center">
+
+                                    <div class="rows-containerCenter">
+                                        &nbsp;
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/canada_dolae_canadiense.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/reino_unido_libra_esterlina.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/dollar_australiano.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/brasil_real_brasil.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/suiza_franco_suizo.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Peso_Chileno.png" alt="">
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <img src="Img/usa_dolar.png" alt="">
+                                    </div> -->
+
+                                </div>
+
+
+                                <div class="container-inputs-center">
+                                    <div class="rows-containerCenter">
+                                        <span class="w-50">COMPRA <br> BUY</span>
+                                        <span class="w-50">VENTA <br> SELL</span>
+                                    </div>
+
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraDolarCanadiense" class="inputs"ng-model="data.PrecioCompraDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaDolarCanadiense" class="inputs"ng-model="data.PrecioVentaDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraLibraEsterlina" class="inputs"ng-model="data.PrecioCompraLibraEsterlina" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaLibraEsterlina" class="inputs"ng-model="data.PrecioVentaLibraEsterlina" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraDolarAustraliano" class="inputs"ng-model="data.PrecioCompraDolarAustraliano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaDolarAustraliano" class="inputs"ng-model="data.PrecioVentaDolarAustraliano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraRealBrasil" class="inputs"ng-model="data.PrecioCompraRealBrasil" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaRealBrasil" class="inputs"ng-model="data.PrecioVentaRealBrasil" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraFrancoSuizo" class="inputs"ng-model="data.PrecioCompraFrancoSuizo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaFrancoSuizo" class="inputs"ng-model="data.PrecioVentaFrancoSuizo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraPesoChileno" class="inputs"ng-model="data.PrecioCompraPesoChileno" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaPesoChileno" class="inputs"ng-model="data.PrecioVentaPesoChileno" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraNuevoSol" class="inputs"ng-model="data.PrecioCompraNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaNuevoSol" class="inputs"ng-model="data.PrecioVentaNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns-center">
+                            <div class="container-center-complete">
+                                <div class="container-titles-center">
+                                    <div class="rows-containerCenter">
+                                        <span style="font-size: 18px;">MONEDA COIN</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Peso Argentino</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Quetzal Guatemala</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Yen Japones</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Peso Dominicano</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Yuan Chino</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Nuevo Sol</span>
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <span>Colones</span>
+                                    </div> -->
+                                </div>
+
+                                <div class="container-img-center">
+                                    <div class="rows-containerCenter">
+                                        &nbsp;
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Peso_Argentino.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/guatrmala_Quetzal.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Yen_Japones.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/republiza_dominicana_peso_dominicano.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Yuan.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Nuevo_Sol.png" alt="">
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <img src="Img/usa_dolar.png" alt="">
+                                    </div> -->
+                                </div>
+
+
+                                <div class="container-inputs-center">
+                                    <div class="rows-containerCenter">
+                                        <span class="w-50">COMPRA <br> BUY</span>
+                                        <span class="w-50">VENTA <br> SELL</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraPesoArgentino" class="inputs"ng-model="data.PrecioCompraPesoArgentino" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaPesoArgentino" class="inputs"ng-model="data.PrecioVentaPesoArgentino" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraQuetzalGuatemala" class="inputs"ng-model="data.PrecioCompraQuetzalGuatemala" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaQuetzalGuatemala" class="inputs"ng-model="data.PrecioVentaQuetzalGuatemala" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraYenJapones" class="inputs"ng-model="data.PrecioCompraYenJapones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaYenJapones" class="inputs"ng-model="data.PrecioVentaYenJapones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraPesoDominicano" class="inputs"ng-model="data.PrecioCompraPesoDominicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaPesoDominicano" class="inputs"ng-model="data.PrecioVentaPesoDominicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraYuanChino" class="inputs"ng-model="data.PrecioCompraYuanChino" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaYuanChino" class="inputs"ng-model="data.PrecioVentaYuanChino" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraNuevoSol" class="inputs"ng-model="data.PrecioCompraNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaNuevoSol" class="inputs"ng-model="data.PrecioVentaNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraColones" class="inputs"ng-model="data.PrecioCompraColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaColones" class="inputs"ng-model="data.PrecioVentaColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container Secundario" ng-class="{'paused-animation': Secundario}">
+            <div class="containerSecundario">
+                
+                <div class="containerLeft">
+                    <div class="containerItemsLeft">
+                        <div class="itemLeft">
+
+                            <div class="titleItemLeft">
+                                <span>DÓLAR</span>
+                            </div>
+
+                            <div class="bodyItemLeft">
+
+                                <div class="w-25 flex flex-Col alignCenter ">
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">COMPRA <br>BUY</span>
+                                    </div>
+
+                                    <img src="Img/usa_dolar.png" alt="" />
+
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">VENTA <br>SELL</span>
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-Col">
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioCompraDolar" class="inputs"ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioVentaDolar" class="inputs"ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="itemLeft">
+
+                            <div class="titleItemLeft">
+                                <span>EURO 100 - 50 - 10 - 5</span>
+                            </div>
+
+                            <div class="bodyItemLeft">
+
+                                <div class="w-25 flex flex-Col alignCenter ">
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">COMPRA <br>BUY</span>
+                                    </div>
+
+                                    <img src="Img/union_europea_euro.png" alt="" />
+
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">VENTA <br>SELL</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex flex-Col">
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioCompraEuroMenudo" class="inputs"ng-model="data.PrecioCompraEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioVentaEuroMenudo" class="inputs"ng-model="data.PrecioVentaEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="itemLeft">
+
+                            <div class="titleItemLeft">
+                                <span>EURO 200</span>
+                            </div>
+
+                            <div class="bodyItemLeft">
+
+                                <div class="w-25 flex flex-Col alignCenter ">
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">COMPRA <br>BUY</span>
+                                    </div>
+
+                                    <img src="Img/union_europea_euro.png" alt="" />
+                                    
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">VENTA <br>SELL</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex flex-Col">
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioCompraEuro200" class="inputs"ng-model="data.PrecioCompraEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioVentaEuro200" class="inputs"ng-model="data.PrecioVentaEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="itemLeft">
+
+                            <div class="titleItemLeft">
+                                <span>PESO MEXICANO</span>
+                            </div>
+
+                            <div class="bodyItemLeft">
+
+                                <div class="w-25 flex flex-Col alignCenter ">
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter"> COMPRA <br>BUY</span>
+                                    </div>
+
+                                    <img src="Img/mexico_peso_mexicano.png" alt="" />
+
+
+                                    <div class="flex fontSmaller flex-Col">
+                                        <span class="textCenter">VENTA <br>SELL</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex flex-Col">
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioCompraPesoMexicano" class="inputs"ng-model="data.PrecioCompraPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                    <div class="precio-moneda">
+                                        <span>$</span>
+                                        <input type="text" id="PrecioVentaPesoMexicano" class="inputs"ng-model="data.PrecioVentaPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="containerCenter">
+
+                    <div class="containerImgLogo">
+
+                        <div style="display: flex;flex-direction: column;width: 30%; gap: 6px;">
+                            <div style="display: flex;align-items: center; gap: 10px;">
+                            
+                                <img src="/Img/peso.png" alt="" style="width: 23%;height: 100%;">
+                                <span style="font-size: 25px;font-weight: 100;">TRM</span>
+                                
+                            </div>
+
+                            <span style="font-size: 45px; font-weight: 100; font-family: 'Seven Segment', sans-serif;"> $ 
+                                <input class="inputTrm" type="text" name="ValorTRM" id="ValorTRM" ng-model="data.ValorTRM">
+                            </span>
+                           
+                        </div>
+
+                        
+
+                        <img src="/Img/logo euro.png" class="imgPrincipal"  alt="">
+
+                        <div style="display: flex;flex-direction: column;width: 30%; gap: 6px;">
+                            <div style="display: flex;align-items: center; gap: 10px;">
+                            
+                                <img src="/Img/fecha.png" alt="" style="width: 23%;height: 100%;">
+                                <span style="font-size: 25px;font-weight: 100;">FECHA</span>
+                                
+                            </div>
+
+                            <span style="font-size: 18px; font-weight: 100;"> {{ FechaActual }} </span>
+                           
+                        </div>
+                    </div>
+
+
+                    <div class="container-columns-center">
+
+                        <div class="columns-center">
+                            <div class="container-center-complete">
+                                <div class="container-titles-center">
+
+                                    <div class="rows-containerCenter">
+                                        <span style="font-size: 18px;">MONEDA COIN</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Florin Aruba</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Florin Antillas</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Dolar Nueva Zelanda</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Peso Boliviano</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Libra Turca</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Bath Tailandia</span>
+                                    </div>
+
+                                </div>
+
+                                <div class="container-img-center">
+
+                                    <div class="rows-containerCenter">
+                                        &nbsp;
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Florin_de_Aruba.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Florin_Antillas.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Nueva_Zelanda_dolar_Nueva_Zelanda.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/bolivia_peso_boliviano.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Libra_Turca.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Bath_Tailandia.png" alt="">
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <img src="Img/usa_dolar.png" alt="">
+                                    </div> -->
+
+                                </div>
+
+
+                                <div class="container-inputs-center">
+                                    <div class="rows-containerCenter">
+                                        <span class="w-50">COMPRA <br> BUY</span>
+                                        <span class="w-50">VENTA <br> SELL</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraFlorinAruba" class="inputs"ng-model="data.PrecioCompraFlorinAruba" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaFlorinAruba" class="inputs"ng-model="data.PrecioVentaFlorinAruba" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraFlorinAntillas" class="inputs"ng-model="data.PrecioCompraFlorinAntillas" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaFlorinAntillas" class="inputs"ng-model="data.PrecioVentaFlorinAntillas" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraNuevaZelanda" class="inputs"ng-model="data.PrecioCompraNuevaZelanda" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaNuevaZelanda" class="inputs"ng-model="data.PrecioVentaNuevaZelanda" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraPesoBoliviano" class="inputs"ng-model="data.PrecioCompraPesoBoliviano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaPesoBoliviano" class="inputs"ng-model="data.PrecioVentaPesoBoliviano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraLibraTurca" class="inputs"ng-model="data.PrecioCompraLibraTurca" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaLibraTurca" class="inputs"ng-model="data.PrecioVentaLibraTurca" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraBathTailandia" class="inputs"ng-model="data.PrecioCompraBathTailandia" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaBathTailandia" class="inputs"ng-model="data.PrecioVentaBathTailandia" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text">
+
+                                            <span>$</span>
+                                            <input type="text">
+
+                                        </div>
+                                    </div> -->
+                                   
+                                    
+                                </div>
+
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="columns-center">
+
+                            <div class="container-center-complete">
+                                
+                                <div class="container-titles-center">
+
+                                    <div class="rows-containerCenter">
+                                        <span style="font-size: 18px;">MONEDA COIN</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Colones</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Wón Corea del Sur</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Peso Uruguayo</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Dirham</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Dólar Hon Kong</span>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <span>Lempira</span>
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <span>Colones</span>
+                                    </div> -->
+
+                                </div>
+
+                                <div class="container-img-center">
+
+                                    <div class="rows-containerCenter">
+                                        &nbsp;
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Colones.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/corea_del_sur_won.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Peso_Uruguayo.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Dirhan.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Dolar_de_Hon_Kong.png" alt="">
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <img src="Img/Lempiras.png" alt="">
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <img src="Img/usa_dolar.png" alt="">
+                                    </div> -->
+
+                                </div>
+
+
+                                <div class="container-inputs-center">
+                                    <div class="rows-containerCenter">
+                                        <span class="w-50">COMPRA <br> BUY</span>
+                                        <span class="w-50">VENTA <br> SELL</span>
+                                    </div>
+
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraColones" class="inputs"ng-model="data.PrecioCompraColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaColones" class="inputs"ng-model="data.PrecioVentaColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraWonCorea" class="inputs"ng-model="data.PrecioCompraWonCorea" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaWonCorea" class="inputs"ng-model="data.PrecioVentaWonCorea" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraPesoUruguayo" class="inputs"ng-model="data.PrecioCompraPesoUruguayo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaPesoUruguayo" class="inputs"ng-model="data.PrecioVentaPesoUruguayo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraDirham" class="inputs"ng-model="data.PrecioCompraDirham" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaDirham" class="inputs"ng-model="data.PrecioVentaDirham" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraDolarHonKong" class="inputs"ng-model="data.PrecioCompraDolarHonKong" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaDolarHonKong" class="inputs"ng-model="data.PrecioVentaDolarHonKong" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text" id="PrecioCompraLempira" class="inputs"ng-model="data.PrecioCompraLempira" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                            <span>$</span>
+                                            <input type="text" id="PrecioVentaLempira" class="inputs"ng-model="data.PrecioVentaLempira" ng-change="AlmacenarLocalStorage()" maxlength="5">
+
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="rows-containerCenter">
+                                        <div class="row-containerFormsCenter">
+                                            
+                                            <span>$</span>
+                                            <input type="text">
+
+                                            <span>$</span>
+                                            <input type="text">
+
+                                        </div>
+                                    </div> -->
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container Terciario" ng-class="{'paused-animation': Terciario}">
+        
+            <div style="width: 100%;display: flex;justify-content: center;align-items: center;height: 28%;">
+                <img src="Img/logo euro.png" alt="" style="height: 40%;width: 35%;">
+            </div>
+        
+            <div class="containerTerciario">
+        
+                <div class="containerColumnsTerciario">
+                    <div class="titleContainerTerciario">
+                        <span style="font-size: 25px;">DÓLAR</span>
+                    </div>
+        
+                    <div class="containerPricesTerciario">
+                        <div class="containerPriceT">
+                            <span class="textCenter">COMPRA <br> BUY </span>
+                            <span class="textContainerPriceT">$ {{ data.PrecioCompraDolar }}</span>
+                        </div>
+        
+                        <div style="width: 40%;">
+                            <img src="Img/usa_dolar.svg" alt="" style="height: 14rem;border-radius: 19px;">
+                        </div>
+        
+                        <div class="containerPriceT">
+                            <span class="textCenter">VENTA <br> SELL </span>
+                            <span class="textContainerPriceT">$ {{ data.PrecioVentaDolar }}</span>
+                        </div>
+        
+                    </div>
+                </div>
+        
+                <div class="containerColumnsTerciario">
+                    <div class="titleContainerTerciario">
+                        <span style="font-size: 25px;">EURO 100 - 50 - 10 - 5</span>
+                    </div>
+        
+                    <div class="containerPricesTerciario">
+                        <div class="containerPriceT">
+                            <span class="textCenter">COMPRA <br> BUY </span>
+                            <span class="textContainerPriceT">$ {{ data.PrecioCompraEuroMenudo }}</span>
+                        </div>
+        
+                        <div style="width: 40%;">
+                            <img src="Img/union_europea_euro.png" alt="" style="height: 14rem;border-radius: 19px;">
+                        </div>
+        
+                        <div class="containerPriceT">
+                            <span class="textCenter">VENTA <br> SELL </span>
+                            <span class="textContainerPriceT">$ {{ data.PrecioVentaEuroMenudo }}</span>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <button type="button" ng-click="Pausar()" style="background: transparent;border: transparent;">
+                <img ng-src="{{ icono }}" alt="" class="" style="height: 17px;width: 17px;" src="Img/pausa.png">
+            </button>
+        </div>
+           
+    </div>
+
+   
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="Index.js"></script>
+
+
+</body>
+
+</html>
