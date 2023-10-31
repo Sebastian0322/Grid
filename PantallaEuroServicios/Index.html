@@ -42,12 +42,12 @@
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioCompraDolar" class="inputs"ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioCompraDolar" ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioVentaDolar" class="inputs"ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioVentaDolar" ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                 </div>
@@ -59,7 +59,7 @@
                         <div class="itemLeft">
 
                             <div class="titleItemLeft">
-                                <span>EURO 100 - 50 - 10 - 5</span>
+                                <span>EURO €100 - €50 - €10 - €5</span>
                             </div>
 
                             <div class="bodyItemLeft">
@@ -83,12 +83,12 @@
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioCompraEuroMenudo" class="inputs"ng-model="data.PrecioCompraEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioCompraEuroMenudo" ng-model="data.PrecioCompraEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioVentaEuroMenudo" class="inputs"ng-model="data.PrecioVentaEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioVentaEuroMenudo" ng-model="data.PrecioVentaEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                 </div>
@@ -98,7 +98,7 @@
                         <div class="itemLeft">
 
                             <div class="titleItemLeft">
-                                <span>EURO 200</span>
+                                <span>EURO €200</span>
                             </div>
 
                             <div class="bodyItemLeft">
@@ -121,12 +121,12 @@
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioCompraEuro200" class="inputs"ng-model="data.PrecioCompraEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioCompraEuro200" ng-model="data.PrecioCompraEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioVentaEuro200" class="inputs"ng-model="data.PrecioVentaEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioVentaEuro200" ng-model="data.PrecioVentaEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                 </div>
@@ -161,12 +161,12 @@
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioCompraPesoMexicano" class="inputs"ng-model="data.PrecioCompraPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioCompraPesoMexicano" ng-model="data.PrecioCompraPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioVentaPesoMexicano" class="inputs"ng-model="data.PrecioVentaPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioVentaPesoMexicano" ng-model="data.PrecioVentaPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                 </div>
@@ -180,34 +180,38 @@
 
                     <div class="containerImgLogo">
 
-                        <div style="display: flex;flex-direction: column;width: 30%; gap: 6px;">
-                            <div style="display: flex;align-items: center; gap: 10px;">
-                            
-                                <img src="/Img/peso.png" alt="" style="width: 23%;height: 100%;">
-                                <span style="font-size: 25px;font-weight: 100;">TRM</span>
-                                
+                        <div style="display: flex;flex-direction: column;width: 60%;gap: 6px;">
+                            <div style="display: flex;align-items: center;">
+                                <div style="width: 50%;display: flex;justify-content: center;align-items: center;gap: 10px;">
+                                    <img src="/Img/ico_dollar.png" alt="" style="width: 17%;height: 2.8rem;">
+                                    <span style="font-size: 25px;font-weight: 600; ">TRM</span>
+                                </div>
+
+                                <div style="width: 50%;display: flex;justify-content: center;align-items: center;gap: 10px;">
+                                    <img src="/Img/ico_euro.png" alt="" style="width: 24%;height: 2.3rem;">
+                                    <span style="font-size: 25px;font-weight: 6300;">TRM</span>
+                                </div>
                             </div>
 
-                            <span style="font-size: 43px; font-weight: 100; font-family: 'Seven Segment', sans-serif;"> $ 
-                                <input class="inputTrm" type="text" name="ValorTRM" id="ValorTRM" ng-model="data.ValorTRM" ng-change="AlmacenarLocalStorage()" maxlength="5">
-                            </span>
+                            <div style="display: flex;gap: 4%;">
+                                <input class="inputTrm" type="text" name="ValorTRM" id="ValorTRM" ng-model="data.ValorTRMDolar"
+                                    ng-change="AlmacenarLocalStorage()">
                             
+                                <input class="inputTrm" type="text" name="ValorTRM" id="ValorTRM" ng-model="data.ValorTRMEuro"
+                                    ng-change="AlmacenarLocalStorage()">
+                            </div>
                         </div>
 
-                        <img src="/Img/logo euro.png" class="imgPrincipal"  alt="">
+                        <img src="/Img/logo_MERCADO_DIVISAS_white.png" class="imgPrincipal" alt="">
 
-                        <div style="display: flex;flex-direction: column;width: 30%; gap: 6px;">
+                        <div style="display: flex;flex-direction: column;width: 40%;gap: 6px;justify-content: center;align-items: center;">
                             <div style="display: flex;align-items: center; gap: 10px;">
-                            
-                                <img src="/Img/fecha.png" alt="" style="width: 23%;height: 100%;">
-                                <span style="font-size: 25px;font-weight: 100;">FECHA</span>
-                                
+                                <img src="/Img/fecha.png" alt="" style="width: 33%;height: 87%;">
+                                <span style="font-size: 23px;font-weight: 100;">FECHA</span>
                             </div>
 
-                            <span style="font-size: 18px; font-weight: 100;">{{ FechaActual }}</span>
-                           
+                            <span style="font-size: 18px; font-weight: 100;">MARTES 31/10/2023</span>
                         </div>
-
                     </div>
 
 
@@ -217,7 +221,7 @@
                                 <div class="container-titles-center">
 
                                     <div class="rows-containerCenter">
-                                        <span style="font-size: 18px;">MONEDA COIN</span>
+                                        <span style="font-size: 18px; margin-top: 23%;">MONEDA COIN</span>
                                     </div>
 
                                     <div class="rows-containerCenter">
@@ -289,8 +293,8 @@
 
                                 <div class="container-inputs-center">
                                     <div class="rows-containerCenter">
-                                        <span class="w-50">COMPRA <br> BUY</span>
-                                        <span class="w-50">VENTA <br> SELL</span>
+                                        <span class="w-50" style="margin-top: 7%;">COMPRA <br> BUY</span>
+                                        <span class="w-50" style="margin-top: 7%;">VENTA <br> SELL</span>
                                     </div>
 
 
@@ -298,10 +302,10 @@
                                         <div class="row-containerFormsCenter">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraDolarCanadiense" class="inputs"ng-model="data.PrecioCompraDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraDolarCanadiense" ng-model="data.PrecioCompraDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaDolarCanadiense" class="inputs"ng-model="data.PrecioVentaDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaDolarCanadiense" ng-model="data.PrecioVentaDolarCanadiense" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -310,10 +314,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraLibraEsterlina" class="inputs"ng-model="data.PrecioCompraLibraEsterlina" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraLibraEsterlina" ng-model="data.PrecioCompraLibraEsterlina" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaLibraEsterlina" class="inputs"ng-model="data.PrecioVentaLibraEsterlina" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaLibraEsterlina" ng-model="data.PrecioVentaLibraEsterlina" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -322,10 +326,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraDolarAustraliano" class="inputs"ng-model="data.PrecioCompraDolarAustraliano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraDolarAustraliano" ng-model="data.PrecioCompraDolarAustraliano" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaDolarAustraliano" class="inputs"ng-model="data.PrecioVentaDolarAustraliano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaDolarAustraliano" ng-model="data.PrecioVentaDolarAustraliano" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -334,10 +338,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraRealBrasil" class="inputs"ng-model="data.PrecioCompraRealBrasil" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraRealBrasil" ng-model="data.PrecioCompraRealBrasil" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaRealBrasil" class="inputs"ng-model="data.PrecioVentaRealBrasil" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaRealBrasil" ng-model="data.PrecioVentaRealBrasil" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -346,10 +350,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraFrancoSuizo" class="inputs"ng-model="data.PrecioCompraFrancoSuizo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraFrancoSuizo" ng-model="data.PrecioCompraFrancoSuizo" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaFrancoSuizo" class="inputs"ng-model="data.PrecioVentaFrancoSuizo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaFrancoSuizo" ng-model="data.PrecioVentaFrancoSuizo" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -358,10 +362,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraPesoChileno" class="inputs"ng-model="data.PrecioCompraPesoChileno" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraPesoChileno" ng-model="data.PrecioCompraPesoChileno" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaPesoChileno" class="inputs"ng-model="data.PrecioVentaPesoChileno" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaPesoChileno" ng-model="data.PrecioVentaPesoChileno" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -370,10 +374,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraNuevoSol" class="inputs"ng-model="data.PrecioCompraNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraNuevoSol" ng-model="data.PrecioCompraNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaNuevoSol" class="inputs"ng-model="data.PrecioVentaNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaNuevoSol" ng-model="data.PrecioVentaNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div> -->
@@ -385,7 +389,7 @@
                             <div class="container-center-complete">
                                 <div class="container-titles-center">
                                     <div class="rows-containerCenter">
-                                        <span style="font-size: 18px;">MONEDA COIN</span>
+                                        <span style="font-size: 18px; margin-top: 23%;">MONEDA COIN</span>
                                     </div>
 
                                     <div class="rows-containerCenter">
@@ -454,18 +458,18 @@
 
                                 <div class="container-inputs-center">
                                     <div class="rows-containerCenter">
-                                        <span class="w-50">COMPRA <br> BUY</span>
-                                        <span class="w-50">VENTA <br> SELL</span>
+                                        <span class="w-50" style="margin-top: 7%;">COMPRA <br> BUY</span>
+                                        <span class="w-50" style="margin-top: 7%;">VENTA <br> SELL</span>
                                     </div>
 
                                     <div class="rows-containerCenter">
                                         <div class="row-containerFormsCenter">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraPesoArgentino" class="inputs"ng-model="data.PrecioCompraPesoArgentino" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraPesoArgentino" ng-model="data.PrecioCompraPesoArgentino" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaPesoArgentino" class="inputs"ng-model="data.PrecioVentaPesoArgentino" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaPesoArgentino" ng-model="data.PrecioVentaPesoArgentino" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -474,10 +478,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraQuetzalGuatemala" class="inputs"ng-model="data.PrecioCompraQuetzalGuatemala" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraQuetzalGuatemala" ng-model="data.PrecioCompraQuetzalGuatemala" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaQuetzalGuatemala" class="inputs"ng-model="data.PrecioVentaQuetzalGuatemala" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaQuetzalGuatemala" ng-model="data.PrecioVentaQuetzalGuatemala" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -486,10 +490,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraYenJapones" class="inputs"ng-model="data.PrecioCompraYenJapones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraYenJapones" ng-model="data.PrecioCompraYenJapones" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaYenJapones" class="inputs"ng-model="data.PrecioVentaYenJapones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaYenJapones" ng-model="data.PrecioVentaYenJapones" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -498,10 +502,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraPesoDominicano" class="inputs"ng-model="data.PrecioCompraPesoDominicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraPesoDominicano" ng-model="data.PrecioCompraPesoDominicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaPesoDominicano" class="inputs"ng-model="data.PrecioVentaPesoDominicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaPesoDominicano" ng-model="data.PrecioVentaPesoDominicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -510,10 +514,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraYuanChino" class="inputs"ng-model="data.PrecioCompraYuanChino" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraYuanChino" ng-model="data.PrecioCompraYuanChino" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaYuanChino" class="inputs"ng-model="data.PrecioVentaYuanChino" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaYuanChino" ng-model="data.PrecioVentaYuanChino" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -522,10 +526,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraNuevoSol" class="inputs"ng-model="data.PrecioCompraNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraNuevoSol" ng-model="data.PrecioCompraNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaNuevoSol" class="inputs"ng-model="data.PrecioVentaNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaNuevoSol" ng-model="data.PrecioVentaNuevoSol" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -534,10 +538,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraColones" class="inputs"ng-model="data.PrecioCompraColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraColones" ng-model="data.PrecioCompraColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaColones" class="inputs"ng-model="data.PrecioVentaColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaColones" ng-model="data.PrecioVentaColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>  -->
@@ -581,12 +585,12 @@
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioCompraDolar" class="inputs"ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioCompraDolar" ng-model="data.PrecioCompraDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioVentaDolar" class="inputs"ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioVentaDolar" ng-model="data.PrecioVentaDolar" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                 </div>
@@ -598,7 +602,7 @@
                         <div class="itemLeft">
 
                             <div class="titleItemLeft">
-                                <span>EURO 100 - 50 - 10 - 5</span>
+                                <span>EURO €100 - €50 - €10 - €5</span>
                             </div>
 
                             <div class="bodyItemLeft">
@@ -622,12 +626,12 @@
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioCompraEuroMenudo" class="inputs"ng-model="data.PrecioCompraEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioCompraEuroMenudo" ng-model="data.PrecioCompraEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioVentaEuroMenudo" class="inputs"ng-model="data.PrecioVentaEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioVentaEuroMenudo" ng-model="data.PrecioVentaEuroMenudo" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                 </div>
@@ -637,7 +641,7 @@
                         <div class="itemLeft">
 
                             <div class="titleItemLeft">
-                                <span>EURO 200</span>
+                                <span>EURO €200</span>
                             </div>
 
                             <div class="bodyItemLeft">
@@ -660,12 +664,12 @@
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioCompraEuro200" class="inputs"ng-model="data.PrecioCompraEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioCompraEuro200" ng-model="data.PrecioCompraEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioVentaEuro200" class="inputs"ng-model="data.PrecioVentaEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioVentaEuro200" ng-model="data.PrecioVentaEuro200" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                 </div>
@@ -700,12 +704,12 @@
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioCompraPesoMexicano" class="inputs"ng-model="data.PrecioCompraPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioCompraPesoMexicano" ng-model="data.PrecioCompraPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                     <div class="precio-moneda">
                                         <span>$</span>
-                                        <input type="text" id="PrecioVentaPesoMexicano" class="inputs"ng-model="data.PrecioVentaPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                        <input type="text" id="PrecioVentaPesoMexicano" ng-model="data.PrecioVentaPesoMexicano" ng-change="AlmacenarLocalStorage()" maxlength="5">
                                     </div>
 
                                 </div>
@@ -719,34 +723,37 @@
 
                     <div class="containerImgLogo">
 
-                        <div style="display: flex;flex-direction: column;width: 30%; gap: 6px;">
-                            <div style="display: flex;align-items: center; gap: 10px;">
-                            
-                                <img src="/Img/peso.png" alt="" style="width: 23%;height: 100%;">
-                                <span style="font-size: 25px;font-weight: 100;">TRM</span>
-                                
+                        <div style="display: flex;flex-direction: column;width: 60%;gap: 6px;">
+                            <div style="display: flex;align-items: center;">
+                                <div style="width: 50%;display: flex;justify-content: center;align-items: center;gap: 10px;">
+                                    <img src="/Img/ico_dollar.png" alt="" style="width: 17%;height: 2.8rem;">
+                                    <span style="font-size: 25px;font-weight: 600; ">TRM</span>
+                                </div>
+
+                                <div style="width: 50%;display: flex;justify-content: center;align-items: center;gap: 10px;">
+                                    <img src="/Img/ico_euro.png" alt="" style="width: 24%;height: 2.3rem;">
+                                    <span style="font-size: 25px;font-weight: 6300;">TRM</span>
+                                </div>
                             </div>
 
-                            <span style="font-size: 45px; font-weight: 100; font-family: 'Seven Segment', sans-serif;"> $ 
-                                <input class="inputTrm" type="text" name="ValorTRM" id="ValorTRM" ng-model="data.ValorTRM">
-                            </span>
-                           
+                            <div style="display: flex;gap: 4%;">
+                                <input class="inputTrm" type="text" name="ValorTRM" id="ValorTRM" ng-model="data.ValorTRMDolar"
+                                    ng-change="AlmacenarLocalStorage()">
+                            
+                                <input class="inputTrm" type="text" name="ValorTRM" id="ValorTRM" ng-model="data.ValorTRMEuro"
+                                    ng-change="AlmacenarLocalStorage()">
+                            </div>
                         </div>
 
-                        
+                        <img src="/Img/logo_MERCADO_DIVISAS_white.png" class="imgPrincipal" alt="">
 
-                        <img src="/Img/logo euro.png" class="imgPrincipal"  alt="">
-
-                        <div style="display: flex;flex-direction: column;width: 30%; gap: 6px;">
+                        <div style="display: flex;flex-direction: column;width: 40%;gap: 6px;justify-content: center;align-items: center;">
                             <div style="display: flex;align-items: center; gap: 10px;">
-                            
-                                <img src="/Img/fecha.png" alt="" style="width: 23%;height: 100%;">
-                                <span style="font-size: 25px;font-weight: 100;">FECHA</span>
-                                
+                                <img src="/Img/fecha.png" alt="" style="width: 33%;height: 87%;">
+                                <span style="font-size: 23px;font-weight: 100;">FECHA</span>
                             </div>
 
-                            <span style="font-size: 18px; font-weight: 100;"> {{ FechaActual }} </span>
-                           
+                            <span style="font-size: 18px; font-weight: 100;">MARTES 31/10/2023</span>
                         </div>
                     </div>
 
@@ -758,7 +765,7 @@
                                 <div class="container-titles-center">
 
                                     <div class="rows-containerCenter">
-                                        <span style="font-size: 18px;">MONEDA COIN</span>
+                                        <span style="font-size: 18px;margin-top: 23%;">MONEDA COIN</span>
                                     </div>
 
                                     <div class="rows-containerCenter">
@@ -770,7 +777,7 @@
                                     </div>
 
                                     <div class="rows-containerCenter">
-                                        <span>Dolar Nueva Zelanda</span>
+                                        <span>Dólar Nueva Zelanda</span>
                                     </div>
 
                                     <div class="rows-containerCenter">
@@ -826,18 +833,18 @@
 
                                 <div class="container-inputs-center">
                                     <div class="rows-containerCenter">
-                                        <span class="w-50">COMPRA <br> BUY</span>
-                                        <span class="w-50">VENTA <br> SELL</span>
+                                        <span class="w-50" style="margin-top: 7%;">COMPRA <br> BUY</span>
+                                        <span class="w-50" style="margin-top: 7%;">VENTA <br> SELL</span>
                                     </div>
 
                                     <div class="rows-containerCenter">
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraFlorinAruba" class="inputs"ng-model="data.PrecioCompraFlorinAruba" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraFlorinAruba" ng-model="data.PrecioCompraFlorinAruba" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaFlorinAruba" class="inputs"ng-model="data.PrecioVentaFlorinAruba" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaFlorinAruba" ng-model="data.PrecioVentaFlorinAruba" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -846,10 +853,10 @@
                                         <div class="row-containerFormsCenter">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraFlorinAntillas" class="inputs"ng-model="data.PrecioCompraFlorinAntillas" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraFlorinAntillas" ng-model="data.PrecioCompraFlorinAntillas" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaFlorinAntillas" class="inputs"ng-model="data.PrecioVentaFlorinAntillas" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaFlorinAntillas" ng-model="data.PrecioVentaFlorinAntillas" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -858,10 +865,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraNuevaZelanda" class="inputs"ng-model="data.PrecioCompraNuevaZelanda" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraNuevaZelanda" ng-model="data.PrecioCompraNuevaZelanda" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaNuevaZelanda" class="inputs"ng-model="data.PrecioVentaNuevaZelanda" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaNuevaZelanda" ng-model="data.PrecioVentaNuevaZelanda" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -870,10 +877,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraPesoBoliviano" class="inputs"ng-model="data.PrecioCompraPesoBoliviano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraPesoBoliviano" ng-model="data.PrecioCompraPesoBoliviano" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaPesoBoliviano" class="inputs"ng-model="data.PrecioVentaPesoBoliviano" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaPesoBoliviano" ng-model="data.PrecioVentaPesoBoliviano" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -882,10 +889,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraLibraTurca" class="inputs"ng-model="data.PrecioCompraLibraTurca" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraLibraTurca" ng-model="data.PrecioCompraLibraTurca" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaLibraTurca" class="inputs"ng-model="data.PrecioVentaLibraTurca" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaLibraTurca" ng-model="data.PrecioVentaLibraTurca" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -894,10 +901,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraBathTailandia" class="inputs"ng-model="data.PrecioCompraBathTailandia" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraBathTailandia" ng-model="data.PrecioCompraBathTailandia" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaBathTailandia" class="inputs"ng-model="data.PrecioVentaBathTailandia" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaBathTailandia" ng-model="data.PrecioVentaBathTailandia" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -929,7 +936,7 @@
                                 <div class="container-titles-center">
 
                                     <div class="rows-containerCenter">
-                                        <span style="font-size: 18px;">MONEDA COIN</span>
+                                        <span style="font-size: 18px; margin-top: 23%;">MONEDA COIN</span>
                                     </div>
 
                                     <div class="rows-containerCenter">
@@ -1001,8 +1008,8 @@
 
                                 <div class="container-inputs-center">
                                     <div class="rows-containerCenter">
-                                        <span class="w-50">COMPRA <br> BUY</span>
-                                        <span class="w-50">VENTA <br> SELL</span>
+                                        <span class="w-50" style="margin-top: 7%;">COMPRA <br> BUY</span>
+                                        <span class="w-50" style="margin-top: 7%;">VENTA <br> SELL</span>
                                     </div>
 
 
@@ -1010,10 +1017,10 @@
                                         <div class="row-containerFormsCenter">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraColones" class="inputs"ng-model="data.PrecioCompraColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraColones" ng-model="data.PrecioCompraColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaColones" class="inputs"ng-model="data.PrecioVentaColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaColones" ng-model="data.PrecioVentaColones" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -1022,10 +1029,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraWonCorea" class="inputs"ng-model="data.PrecioCompraWonCorea" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraWonCorea" ng-model="data.PrecioCompraWonCorea" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaWonCorea" class="inputs"ng-model="data.PrecioVentaWonCorea" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaWonCorea" ng-model="data.PrecioVentaWonCorea" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -1034,10 +1041,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraPesoUruguayo" class="inputs"ng-model="data.PrecioCompraPesoUruguayo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraPesoUruguayo" ng-model="data.PrecioCompraPesoUruguayo" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaPesoUruguayo" class="inputs"ng-model="data.PrecioVentaPesoUruguayo" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaPesoUruguayo" ng-model="data.PrecioVentaPesoUruguayo" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -1046,10 +1053,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraDirham" class="inputs"ng-model="data.PrecioCompraDirham" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraDirham" ng-model="data.PrecioCompraDirham" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaDirham" class="inputs"ng-model="data.PrecioVentaDirham" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaDirham" ng-model="data.PrecioVentaDirham" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -1058,10 +1065,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraDolarHonKong" class="inputs"ng-model="data.PrecioCompraDolarHonKong" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraDolarHonKong" ng-model="data.PrecioCompraDolarHonKong" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaDolarHonKong" class="inputs"ng-model="data.PrecioVentaDolarHonKong" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaDolarHonKong" ng-model="data.PrecioVentaDolarHonKong" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -1070,10 +1077,10 @@
                                         <div class="row-containerFormsCenter">
                                             
                                             <span>$</span>
-                                            <input type="text" id="PrecioCompraLempira" class="inputs"ng-model="data.PrecioCompraLempira" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioCompraLempira" ng-model="data.PrecioCompraLempira" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                             <span>$</span>
-                                            <input type="text" id="PrecioVentaLempira" class="inputs"ng-model="data.PrecioVentaLempira" ng-change="AlmacenarLocalStorage()" maxlength="5">
+                                            <input type="text" id="PrecioVentaLempira" ng-model="data.PrecioVentaLempira" ng-change="AlmacenarLocalStorage()" maxlength="5">
 
                                         </div>
                                     </div>
@@ -1102,7 +1109,7 @@
         <div class="container Terciario" ng-class="{'paused-animation': Terciario}">
         
             <div style="width: 100%;display: flex;justify-content: center;align-items: center;height: 28%;">
-                <img src="Img/logo euro.png" alt="" style="height: 40%;width: 35%;">
+                <img src="Img/logo_MERCADO_DIVISAS_white.png" alt="" style="height: 51%;width: 30%;">
             </div>
         
             <div class="containerTerciario">
@@ -1114,7 +1121,7 @@
         
                     <div class="containerPricesTerciario">
                         <div class="containerPriceT">
-                            <span class="textCenter">COMPRA <br> BUY </span>
+                            <span class="textCenter" style="font-size: 19px;">COMPRA <br> BUY </span>
                             <span class="textContainerPriceT">$ {{ data.PrecioCompraDolar }}</span>
                         </div>
         
@@ -1123,7 +1130,7 @@
                         </div>
         
                         <div class="containerPriceT">
-                            <span class="textCenter">VENTA <br> SELL </span>
+                            <span class="textCenter" style="font-size: 19px;">VENTA <br> SELL </span>
                             <span class="textContainerPriceT">$ {{ data.PrecioVentaDolar }}</span>
                         </div>
         
@@ -1132,12 +1139,12 @@
         
                 <div class="containerColumnsTerciario">
                     <div class="titleContainerTerciario">
-                        <span style="font-size: 25px;">EURO 100 - 50 - 10 - 5</span>
+                        <span style="font-size: 25px;">EURO €100 - €50 - €10 - €5</span>
                     </div>
         
                     <div class="containerPricesTerciario">
                         <div class="containerPriceT">
-                            <span class="textCenter">COMPRA <br> BUY </span>
+                            <span class="textCenter" style="font-size: 19px;">COMPRA <br> BUY </span>
                             <span class="textContainerPriceT">$ {{ data.PrecioCompraEuroMenudo }}</span>
                         </div>
         
@@ -1146,7 +1153,7 @@
                         </div>
         
                         <div class="containerPriceT">
-                            <span class="textCenter">VENTA <br> SELL </span>
+                            <span class="textCenter" style="font-size: 19px;">VENTA <br> SELL </span>
                             <span class="textContainerPriceT">$ {{ data.PrecioVentaEuroMenudo }}</span>
                         </div>
         
@@ -1163,13 +1170,10 @@
            
     </div>
 
-   
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"></script>
+    <script src="/Scripts/angular.min.js"></script> 
+    <script src="/Scripts/moment.min.js"></script>
+    <script src="/Scripts/moment-with-locales.min.js"></script>
     <script src="Index.js"></script>
-
 
 </body>
 
